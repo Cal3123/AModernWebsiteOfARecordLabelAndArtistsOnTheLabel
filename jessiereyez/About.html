@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jessie Reyez | About</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            .minor-nav { 
+                position: relative;
+                top: 0;
+            }
+
+            @supports (position: sticky) {
+                .minor-nav {
+                    position: -webkit-sticky;
+                    position: -moz-sticky;
+                    position: -ms-sticky;
+                    position: -o-sticky;
+                    position: sticky;
+                    top: 0;
+                }                
+            }
+        </style>        
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="Index.html">HOME</a></li>
+                    <li><a href="Store.html">STORE</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            <!--hr stands for horizontal role. Produces a horizonatl line--> 
+            <!--  <hr> -->
+            <!--h1 the heading element-->  
+            <h1 class="duo-name duo-name-large">Jessie Reyez</h1>
+        </header>
+        <div class="minor-bar container content-section  minor-nav">
+            <li>
+                <ul>
+                    <li><a href="../Index.html"> Record Label </a></li>
+                    <li><!--Insert link to Portfolio--> Developer's Portfolio </li>
+                </ul>    
+            </li>
+        </div>         
+        <!--Section implies grouping of stuff that is all in one section. While the header element says 
+        this is the header of our page, the section element says this a generic section of some form in 
+        which all of the content is related--> 
+        <section class="content-section container">
+            <h2 class="section-header">ABOUT</h2>
+            <!--img element is an empty element meaning an element which has no end tag--> 
+            <img class="about-artist-image" src="Images/JessieReyezProfile2.jpg">
+            <!--p is in much smaller font than our headings h1, h2,..--> 
+            <p>Jessica Reyez (born June 13, 1991) is a Canadian singer and songwriter. Her 2016 single "Figures" 
+                peaked at number 58 on the Canadian Hot 100 in 2017 and was certified triple Platinum by Music 
+                Canada and Platinum by the RIAA. Her 2017 EP, Kiddo, led to four nominations at the 2018 Juno 
+                Awards, winning Breakthrough Artist. Her follow up EP, Being Human in Public, was released in 
+                2018. It won R&B/Soul Recording of The Year at the 2019 Juno Awards and was nominated for Best 
+                Urban Contemporary Album at the 2020 Grammy Awards. 
+            </p>
+            <p>
+                Reyez again won the R&B/Soul Recording of the 
+                Year, for "Feel it Too" with Tory Lanez and Tainy, at the 2020 Juno Awards, where she was also 
+                nominated for Artist of the Year. Reyez has written songs for Calvin Harris, Kehlani, Dua Lipa and 
+                Normani, most notably penning the hit "One Kiss", and has collaborated with Eminem on multiple occasions.
+                Her debut album, Before Love Came to Kill Us, was released on March 27, 2020.
+            </p>     
+        </section>
+        <!--FOOTER -->
+         
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="duo-name">Jessie Reyez</h3>
+                <ul class="nav footer-nav">
+                    <li>    
+                        <img src="Images/Email Icon.png"> 
+                    </li>                    
+                    <li>
+                        <!--An anchor tag uses the href attribute which stands for Hypertext Refernce to specify
+                        source of our link. Where as img tag uses src attribute to specify source of the link to a page. 
+                        The target tag specify where the page file should be open, _self means open in the current, and _blank
+                        means open in a new tab--> 
+                        <a href="https://www.youtube.com/channel/UCq3Ci-h945sbEYXpVlw7rJg" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/69GGBxA162lTqCwzJG5jLp" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/thechainsmokers" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>    
+        </footer> 
+    </body>
+</html>

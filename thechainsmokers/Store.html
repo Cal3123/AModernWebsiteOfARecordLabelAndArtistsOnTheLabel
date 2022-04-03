@@ -1,0 +1,196 @@
+<!--html is only for content whereas CSS is for layout and display--> 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Chainsmokers | Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            .minor-nav { 
+                position: relative;
+                top: 0;
+            }
+
+            @supports (position: sticky) {
+                .minor-nav {
+                    position: -webkit-sticky;
+                    position: -moz-sticky;
+                    position: -ms-sticky;
+                    position: -o-sticky;
+                    position: sticky;
+                    top: 0;
+                }                
+            }
+        </style>        
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="Index.html">HOME</a></li>
+                    <li><a href="Store.html">STORE</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            <!--<hr>-->
+            <h1 class="duo-name duo-name-large">The Chainsmokers</h1>
+        </header>
+        <div class=" minor-bar   container container  minor-nav">
+            <li>
+                <ul>
+                    <li><a href="../Index.html"> Record Label |</a></li>
+                    <li><!--Insert link to Portfolio-->Developer's Web Portfolio </li>
+                </ul> 
+            </li>
+        </div>        
+        <!--MUSIC-->
+        <section class="container content-section">
+            <h2 class="section-header">MUSIC</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 1</span>
+                    <img class="shop-item-image" src="Images/worldwarjoy Album5.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 2</span>
+                    <img class="shop-item-image" src="Images/sickboyAlbum4.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 3</span>
+                    <img class="shop-item-image" src="Images/memoriesdonotopenAlbum3.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 4</span>
+                    <img class="shop-item-image" src="Images/collageAlbum2.jfif">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+        <!--MERCH-->
+        <section class="container content-section">
+            <h2 class="section-header">MERCH</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Limited Edition Hoodie</span>
+                    <img class="shop-item-image" src="Images/Chainsmokershoodie1.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Special Edition Hoodie</span>
+                    <img class="shop-item-image" src="Images/Chainsmokershoodie2.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$20.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Tour Hoodie</span>
+                    <img class="shop-item-image" src="Images/Chainsmokershoodie3.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Chainsmokers Hat</span>
+                    <img class="shop-item-image" src="Images/ChainsmokersHat.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <!--CART-->
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <!--strong tag makes the content bolded. Used in html styling. No longer needed after applying CSS styling.
+                <strong>ITEM</strong>
+                Below is a spacing trick used in our html styling to show spacing between PRICE, QUANTITY, and ITEM element.
+                &lt;&gt; 
+                --> 
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <!-- If we ommit the height attribute it will automatically adjust the 
+                        height element to be twice (in aspect ratio with) the width. The number is in pixels.-->
+                        <img class="cart-item-image" src="Images/Chainsmokershoodie1.png" width="100" height="100">
+                        <span>Limited Edition Hoodie</span> 
+                    </div>
+                    <span class="cart-price cart-column">$19.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <!-- Setting input type as number sets input to receive just number values -->
+                        <img class="cart-item-image" src="Images/memoriesdonotopenAlbum3.jpg" width="100" height="100">
+                        <span class="cart-item-title">Album 3</span>
+                    </div>
+                    <span class="cart-price cart-column">$9.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="2">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$49.97</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        <!--FOOTER -->
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="duo-name">The Chainsmokers</h3>
+                <ul class="nav footer-nav">
+                    <li>    
+                        <img src="Images/Email Icon.png"> 
+                    </li>
+                    <li> 
+                        <a href="https://www.youtube.com/channel/UCq3Ci-h945sbEYXpVlw7rJg" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/69GGBxA162lTqCwzJG5jLp" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/thechainsmokers" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>    
+        </footer>
+    </body>
+</html>

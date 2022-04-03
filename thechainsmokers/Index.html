@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--The title element in he head section of our html element is going to be used 
+        by our browser to set the title of our page on the tab-->
+        <title>The Chainsmokers | Home</title>
+        <!--The meta tag has a bunch of things we can define for it based on what we set
+        for the name attribute. In our case, we want to use the tag for description so 
+        we set it as such. The desciption in the content attribute is what appears under
+        our title whenever you search in Google-->
+        <meta name="description" content="The Chainsmokers are a pop act consisting of two DJs 
+        ...they soared to the top of the charts with 'Closer', one of the biggest pop hit singles 
+        of all time. ">
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            .minor-nav { 
+                position: relative;
+                top: 0;
+            }
+
+            @supports (position: sticky) {
+                .minor-nav {
+                    position: -webkit-sticky;
+                    position: -moz-sticky;
+                    position: -ms-sticky;
+                    position: -o-sticky;
+                    position: sticky;
+                    top: 0;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="Index.html">HOME</a></li>
+                    <li><a href="Store.html">STORE</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            <h1 class="duo-name duo-name-large">The Chainsmokers</h1>
+            <div class="container"> 
+                <li> 
+                    <a href="https://music.apple.com/us/album/world-war-joy/1489350461" target="_blank">
+                        <button class="btn btn-header" type="button">
+                        Get our Latest Album
+                    </button>
+                    </a>
+                </li>
+            </div>
+            <!--The br tag is a line break tag. It adds line break whever it is-->
+            <br>
+            <br>
+            <!-- TODO: Find a suitable background image -->
+            <!--comment: Below is an html entity. An html entity is identified 
+            by pound'!' and ampersand'&' sign follow ny the number that correspond 
+            to the symbol. Some symbol has letters to represent the #num. e.g &#60 = &lt.-->
+            <li>
+                <a href="https://www.youtube.com/watch?v=Io0fBr1XBUA" target="_blank">
+                <button class="btn btn-header btn-play" type="button">
+                    &#9658;
+                </button>
+                </a>
+            </li>
+        </header>
+        <div class="minor-bar container content-section  minor-nav">
+            <ul>
+                <li><a href="../Index.html"> Record Label |</a></li> 
+                <li><!--Insert link to Portfolio--> Developer's Web Portfolio </li>
+            </ul> 
+        </div>
+        
+        <section class="content-section container">
+            <h2 class="section-header">TOURS</h2>
+            <div>
+                <!--div and span elements are called meaningless element, it's meaning is not inherent.
+                div is block element meaning its content will appear on a separate line from the content around it,
+                similar to p tag. The span is an inline element meaning it appears inline with the content
+                around it. General use of meaningless element is to group html that either has no meaning
+                or there is no html tag to descriibe the meaning-->
+                <div class="tour-row">
+                    <!--The strong tag denotes importance. In most cases the text will be bolded but in other cases
+                    the text will not be bolded for e.g if you are using a screen reader the text will have special emphasis
+                    when it speaks-->
+                    <span class="tour-item tour-date" >JUL 16</span>
+                    <!--comment: Below are html entities. To put spaces between our elements we use the less
+                    than '&lt' and greater than '&gt' symbol/html entities-->
+                    <span class="tour-item tour-city">DETROIT, MI</span> 
+                    <span class="tour-item tour-arena">DTE ENERGY MUSIC THEATRE</span> 
+                    <!--button can have type to them. In this case want it to be generic-->
+                    <button class="tour-item tour-btn btn btn-primary" type="button">BUY TICKETS</button>
+                    <!--hr stands for horizontal role. Produces a horizonatl line-->
+                    <hr>
+                </div>
+                <div class="tour-row">
+                    <span class="tour-item tour-date" >JUL 19</span>
+                    <span class="tour-item tour-city">TORONTO, ON</span> 
+                    <span class="tour-item tour-arena">BUDWEISER STAGE</span> 
+                    <button class="tour-item tour-btn btn btn-primary" type="button">BUY TICKETS</button> 
+                    <hr>
+                </div>
+                <div class="tour-row">
+                    <span class="tour-item tour-date" >JUL 22</span>
+                    <span class="tour-item tour-city">BRISTOW, VA</span>
+                    <span class="tour-item tour-arena">JIGGY LUBE LIVE</span>  
+                    <button class="tour-item tour-btn btn btn-primary" type="button">BUY TICKETS</button>
+                    <hr>
+                </div>
+                <div class="tour-row">
+                    <span class="tour-item tour-date" >JUL 29</span>
+                    <span class="tour-item tour-city">PHOENIX, AZ</span>  
+                    <span class="tour-item tour-arena">AK-CHIN PAVILION</span>   
+                    <button class="tour-item tour-btn btn btn-primary" type="button">BUY TICKETS</button>
+                    <hr>
+                </div>
+                <div class="tour-row">
+                    <span class="tour-item tour-date" >AUG 2</span>
+                    <span class="tour-item tour-city">LAS VEGAS, NV</span> 
+                    <span class="tour-item tour-arena">T-MOBILE ARENA</span>  
+                    <button class="tour-item tour-btn btn btn-primary" type="button">BUY TICKETS</button>
+                    <hr>
+                </div>
+                <div class="tour-row">
+                    <span class="tour-item tour-date" >AUG 7</span> 
+                    <span class="tour-item tour-city">CONCORD, CA</span>  
+                    <span class="tour-item tour-arena">CONCORD PAVILION</span> 
+                    <button class="tour-item tour-btn btn btn-primary" type="button">BUY TICKETS</button>
+                </div>
+            </div>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="duo-name">The Chainsmokers</h3>
+                <ul class="nav footer-nav">
+                    <li>    
+                        <img src="Images/Email Icon.png"> 
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCq3Ci-h945sbEYXpVlw7rJg" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/69GGBxA162lTqCwzJG5jLp" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/thechainsmokers" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

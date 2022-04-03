@@ -1,0 +1,99 @@
+<!--html is only for content whereas CSS is for layout and display--> 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Major Records | Contact</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            .minor-nav { 
+                position: relative;
+                top: 0;
+            }
+
+            @supports (position: sticky) {
+                .minor-nav {
+                    position: -webkit-sticky;
+                    position: -moz-sticky;
+                    position: -ms-sticky;
+                    position: -o-sticky;
+                    position: sticky;
+                    top: 0;
+                }                
+            }
+        </style> 
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="Index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li> 
+                </ul>
+            </nav>
+            <!--<hr>-->
+            <h1 class="duo-name duo-name-large">MAJOR RECORDS</h1>
+        </header>
+        <div class="minor-bar container content-section  minor-nav">
+            <li><!--Insert link to Portfolio--> Developer's Portfolio </li>
+        </div>      
+
+        <!--CONTACT-->
+        <section class="container content-section">
+
+            <h2>Contact Form</h2>
+            Send us a message
+            <div class = "form-item ">
+                <label>Name</label>
+                <input type = "text" name = "title" value = "Full name">
+            </div>
+            <div class = "form-item ">
+                <label>Email</label>
+                <input type = "text" name = "title" value = "email@address.com">
+            
+            </div>
+            <div class = "form-item "> 
+                <label>Message</label>
+                <textarea name = "description">Your message</textarea>
+            </div> 
+
+            <ul class="nav footer-nav">
+                <div>
+                    <li> 
+                        <img src="Images/Phone Icon.png">
+                    </li>
+                </div>
+                <div>    
+                    <li> 
+                        <img src="Images/Email Icon.png">
+                    </li>
+                </div>
+             </ul>
+        </section>
+ 
+        <!--FOOTER -->
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                 
+                <ul class="nav footer-nav">
+                    <li> 
+                        <a href="https://www.youtube.com/channel/UCq3Ci-h945sbEYXpVlw7rJg" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/69GGBxA162lTqCwzJG5jLp" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/thechainsmokers" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>    
+        </footer>
+    </body>
+</html>
